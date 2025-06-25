@@ -1,187 +1,138 @@
-/* General */
+/* General styles */
 body {
-  background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
-  color: #e5e5e5;
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
+  background-color: #2F4454;
+  color: #DA7B93;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Navbar */
 .navbar {
-  background: rgba(15, 32, 39, 0.8);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #00ffe0;
+  background: linear-gradient(90deg, #2E151B, #1C3334);
 }
 
-.navbar-brand.gradient-text {
-  font-weight: 700;
-  font-size: 1.8rem;
-  background: linear-gradient(90deg, #00ffe0, #0072ff);
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #DA7B93, #376E6F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Buttons */
-.btn,
-.btn-outline-primary,
-.btn-outline-secondary,
-.btn-outline-danger {
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
 .btn-primary {
-  background: linear-gradient(45deg, #00ffe0, #0072ff);
-  border: none;
-  color: #000;
+  background-color: #DA7B93;
+  border-color: #DA7B93;
+  color: #2F4454;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(45deg, #0072ff, #00ffe0);
-  box-shadow: 0 0 10px #00ffe0;
+  background-color: #C96A83;
+  border-color: #C96A83;
+  color: #fff;
 }
 
-.btn-outline-primary,
-.btn-outline-secondary,
+.btn-outline-primary {
+  border-color: #DA7B93;
+  color: #DA7B93;
+}
+
+.btn-outline-primary:hover {
+  background-color: #DA7B93;
+  color: #2F4454;
+}
+
+.btn-outline-secondary {
+  border-color: #376E6F;
+  color: #376E6F;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #376E6F;
+  color: #fff;
+}
+
 .btn-outline-danger {
-  border: 1px solid #00ffe0;
-  color: #00ffe0;
+  border-color: #2E151B;
+  color: #2E151B;
 }
 
-.btn-outline-primary:hover,
-.btn-outline-secondary:hover,
 .btn-outline-danger:hover {
-  background: #00ffe0;
-  color: #000;
-}
-
-/* Search */
-.search-input {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid #00ffe0;
-  color: #eee;
-  border-radius: 8px;
-}
-
-.search-input:focus {
-  box-shadow: 0 0 10px #00ffe0;
-  border-color: #00ffe0;
-}
-
-.clear-search {
-  color: #00ffe0;
-  font-size: 1.2rem;
+  background-color: #2E151B;
+  color: #fff;
 }
 
 /* Card */
 .student-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 224, 0.2);
-  backdrop-filter: blur(8px);
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 255, 224, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.student-card.hover-grow:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 8px 30px rgba(0, 255, 224, 0.4);
-}
-
-/* Details */
-.details-list .detail-item {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(0, 255, 224, 0.1);
-}
-
-.course-badge {
-  background: linear-gradient(45deg, #ff6a00, #ee0979);
-  padding: 0.3em 0.6em;
-  border-radius: 6px;
-  font-size: 0.85rem;
-}
-
-/* Toast */
-.toast {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #00ffe0;
-  border: 1px solid #00ffe0;
-}
-
-.toast-header {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #00ffe0;
-}
-
-/* Alerts */
-.alert-danger {
-  background: rgba(255, 0, 64, 0.2);
-  color: #ff4c80;
-  border: 1px solid #ff4c80;
-}
-
-/* Spinner */
-.spinner-border {
-  color: #00ffe0;
-}
-
-/* Section Headings */
-.course-section h4 {
-  color: #00ffe0;
-  border-bottom: 2px solid #00ffe0;
-  padding-bottom: 4px;
-}
-
-/* Utility */
-.no-results {
-  font-style: italic;
-  color: #bbb;
-}
-
-.no-student {
-  text-align: center;
-  color: #888;
-  padding: 20px;
-}
-/* Search Bar */
-.search-input {
-  background-color: rgba(30, 30, 30, 0.9);
-  border: 1px solid #00ffe0;
-  color: #e0e0e0;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 255, 224, 0.3);
-}
-
-.search-input::placeholder {
-  color: #aaa;
-}
-
-.search-input:focus {
-  border-color: #00ffe0;
-  box-shadow: 0 0 15px #00ffe0;
-  outline: none;
-}
-
-/* Student Card */
-.student-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 255, 224, 0.2);
-  border-radius: 12px;
-  color: #e0e0e0;
-  box-shadow: 0 4px 12px rgba(0, 255, 224, 0.1);
+  background-color: #1C3334;
+  color: #DA7B93;
+  border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .student-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 6px 20px rgba(0, 255, 224, 0.4);
+  box-shadow: 0 0 15px #DA7B93;
 }
 
-/* Card text override */
-.student-card .card-title,
-.student-card .card-subtitle {
-  color: #00ffe0;
+/* Search input */
+.search-input {
+  background-color: #1C3334;
+  border: 1px solid #376E6F;
+  color: #DA7B93;
+}
+
+.search-input::placeholder {
+  color: #8CAAB3;
+}
+
+.clear-search {
+  color: #DA7B93;
+}
+
+/* Course section headings */
+.course-section h4 {
+  color: #DA7B93;
+  border-bottom: 2px solid #DA7B93;
+  padding-bottom: 4px;
+}
+
+/* Toast */
+.toast-header {
+  background-color: #376E6F;
+  color: #fff;
+}
+
+.toast-body {
+  background-color: #2F4454;
+  color: #DA7B93;
+}
+
+/* Details list */
+.details-list .detail-item {
+  background-color: #2F4454;
+  color: #DA7B93;
+}
+
+.course-badge {
+  background-color: #376E6F;
+  color: #fff;
+}
+
+/* Small extras */
+.hover-grow:hover {
+  transform: scale(1.03);
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #DA7B93, #376E6F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.no-results {
+  color: #8CAAB3;
+}
+
+.no-student {
+  color: #8CAAB3;
 }
