@@ -1,0 +1,187 @@
+/* General */
+body {
+  background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
+  color: #e5e5e5;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(15, 32, 39, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #00ffe0;
+}
+
+.navbar-brand.gradient-text {
+  font-weight: 700;
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, #00ffe0, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.btn,
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-danger {
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #00ffe0, #0072ff);
+  border: none;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #0072ff, #00ffe0);
+  box-shadow: 0 0 10px #00ffe0;
+}
+
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-danger {
+  border: 1px solid #00ffe0;
+  color: #00ffe0;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-secondary:hover,
+.btn-outline-danger:hover {
+  background: #00ffe0;
+  color: #000;
+}
+
+/* Search */
+.search-input {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ffe0;
+  color: #eee;
+  border-radius: 8px;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 10px #00ffe0;
+  border-color: #00ffe0;
+}
+
+.clear-search {
+  color: #00ffe0;
+  font-size: 1.2rem;
+}
+
+/* Card */
+.student-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 224, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 255, 224, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-card.hover-grow:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 255, 224, 0.4);
+}
+
+/* Details */
+.details-list .detail-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 255, 224, 0.1);
+}
+
+.course-badge {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+/* Toast */
+.toast {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #00ffe0;
+  border: 1px solid #00ffe0;
+}
+
+.toast-header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #00ffe0;
+}
+
+/* Alerts */
+.alert-danger {
+  background: rgba(255, 0, 64, 0.2);
+  color: #ff4c80;
+  border: 1px solid #ff4c80;
+}
+
+/* Spinner */
+.spinner-border {
+  color: #00ffe0;
+}
+
+/* Section Headings */
+.course-section h4 {
+  color: #00ffe0;
+  border-bottom: 2px solid #00ffe0;
+  padding-bottom: 4px;
+}
+
+/* Utility */
+.no-results {
+  font-style: italic;
+  color: #bbb;
+}
+
+.no-student {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+}
+/* Search Bar */
+.search-input {
+  background-color: rgba(30, 30, 30, 0.9);
+  border: 1px solid #00ffe0;
+  color: #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 224, 0.3);
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-input:focus {
+  border-color: #00ffe0;
+  box-shadow: 0 0 15px #00ffe0;
+  outline: none;
+}
+
+/* Student Card */
+.student-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 224, 0.2);
+  border-radius: 12px;
+  color: #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 255, 224, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 255, 224, 0.4);
+}
+
+/* Card text override */
+.student-card .card-title,
+.student-card .card-subtitle {
+  color: #00ffe0;
+}
