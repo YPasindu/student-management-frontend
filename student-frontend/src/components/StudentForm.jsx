@@ -35,7 +35,7 @@ const StudentForm = ({ closeModal, mode = 'add', student }) => {
     try {
       const response = await axios({
         method: mode === 'add' ? 'post' : 'put',
-        url: `http://localhost:8080/api/students${mode === 'edit' ? `/${student.id}` : ''}`,
+        url: `http://localhost:8081/api/students${mode === 'edit' ? `/${student.id}` : ''}`,
         data: formData,
         headers: {
           'Content-Type': 'application/json'

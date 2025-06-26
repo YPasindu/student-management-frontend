@@ -15,7 +15,7 @@ const StudentList = ({ students, setStudents, onEdit, onViewDetails, onDelete, s
     const fetchStudents = async () => {
       try {
         setIsLoading(true);
-        const response = await axios.get('http://localhost:8080/api/students');
+        const response = await axios.get('http://localhost:8081/api/students');
         setStudents(response.data);
         setFilteredStudents(response.data); // Initialize filtered students
         setError(null);
